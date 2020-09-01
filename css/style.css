@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@900&display=swap');
+
+:root{
+    --orange: #fb5607;
+    --orange2: #dd591b;
+    --dark-orange: #dc2f02;
+    --black: #000000;
+    --yellow: #fca311;
+    --white: #fff;
+    --white-hover: #dddddd;
+}
+
+h1{
+    font-family: 'Chivo', sans-serif;
+    color: var(--white);
+    font-style: italic;
+}
+
+main{
+    background: linear-gradient(to top, rgba(94, 28, 12, 0.3), rgba(46, 46, 46, 0.3)), url(../image/background-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: 10vh;
+}
+
+.btn-orange{
+    background: var(--orange) !important;
+    border-color: var(--orange) !important;
+}
+
+.btn-orange:hover{
+    background: var(--orange2) !important;
+    border-color: var(--orange2) !important;
+}
+
+.button{
+    border-radius: 2rem !important;
+    transition: .5s ease-in-out !important;
+}
+
+.button a{
+    font-size: 1.3rem;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.button:hover{
+    transform: scale(1.030);
+}
+
+.button a:hover{
+    font-size: 1.3rem;
+    color: var(--white-hover);
+}
