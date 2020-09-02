@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
 
 :root{
     --orange: #fb5607;
@@ -25,16 +29,20 @@ h1, h2, h4{
     font-style: italic;
 }
 
-p{
-    font-family: 'Dosis', sans-serif;
+p, label{
+    font-family: 'PT Sans', sans-serif;
     font-size: 1.2rem;
     color: var(--white);
 }
 
-main{
+body{
     background: linear-gradient(to top, rgba(94, 28, 12, 0.3), rgba(46, 46, 46, 0.3)), url(../image/background-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main{
     height: 100vh;
     padding-top: 10vh;
 }
@@ -79,4 +87,44 @@ main{
 .carousel-control-next{
     color: var(--dark-orange) !important;
     font-size: 1.5rem;
+}
+
+.map{
+    width: 100% !important;
+    height: 400px !important;
+    position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+    .map{
+        width: 100% !important;
+        height: 100% !important;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.button-representantes{
+    border-radius: 0 !important;
+    transition: .3s ease-in-out !important;
+}
+
+.button-representantes a{
+    font-size: 1.3rem;
+    color: var(--white);
+    font-weight: 900;
+    transition: .3s ease-in-out !important;
+}
+
+.button-representantes a:hover{
+    font-size: 1.3rem;
+    color: var(--white-hover);
+}
+
+.table-bordered td,
+.table-bordered th{
+    border-color: var(--orange2) !important;
+    font-family: 'PT Sans', sans-serif;
+    background: var(--white);
 }

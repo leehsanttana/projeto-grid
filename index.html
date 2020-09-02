@@ -23,13 +23,13 @@
         <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                <a class="nav-link" href="#">Empresa</a>
+                  <a class="nav-link" href="#empresa">Empresa</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Produtos</a>
+                  <a class="nav-link" href="#produtos">Produtos</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Contatos</a>
+                  <a class="nav-link" href="#">Contatos</a>
                 </li>
             </ul>
         </div>
@@ -39,7 +39,7 @@
         <h1 class="display-4">Seja Bem-vindo à</h1>
         <img src="image/grid-logo.png" alt="Logotipo da Grid" class="img-fluid">
         <div class="btn btn-orange button col-md-3 mt-4 d-block mx-auto">
-            <a href="" class="nav-link">Conheça nossas linhas de calota!</a>
+            <a href="#produtos" class="nav-link">Conheça nossas linhas de calota!</a>
         </div>
     </main>
 
@@ -143,11 +143,12 @@
       </div>
     </section>
     
-    <section class="container-fluid bg-black py-5" id="produtos">
+    <section class="container-fluid py-5" id="produtos">
         <div class="container">
+            <h2 class="mb-4">Conheça nossas linhas de produtos</h2>
             <div class="row">
                 <div class="col-md-12">
-                  <div id="linhas-produtos" class="carousel slide" data-ride="carousel">
+                  <div id="linhas-produtos" class="carousel slide mx-auto d-block rounded-lg shadow-lg my-4" data-ride="carousel">
 
                     <ul class="carousel-indicators">
                       <li data-target="#linhas-produtos" data-slide-to="0" class="active"></li>
@@ -177,8 +178,369 @@
                 </div>
               </div>
             </div>
+
+            <div class="row">
+              <div class="btn btn-orange button col-md-3 mt-4 d-block mx-auto">
+                <a href="http://www.grid.ind.br/catalogo-grid-calotas-2020.pdf" target="_blank" class="nav-link">Veja nossa catálogo completo!</a>
+              </div>
+            <div class="btn btn-orange button col-md-3 mt-4 d-block mx-auto">
+                <a href="http://www.grid.ind.br/aplicacoes-grid-2020.pdf" target="_blank" class="nav-link">Confira a tabela de aplicações.</a>
+            </div>
+            </div>
         </div>
     </section>
+
+    <section class="container-fluid bg-orange" id="contatos">
+      <div class="row">
+
+        <div class="col-md-6 p-4">
+
+          <h4>Entre em Contato e tire suas dúvidas!</h4>
+
+          <form id="contactForm" name="sentMessage" novalidate="novalidate" class="my-4">
+              <div class="form-group">
+                  <label for="nome">Nome Completo:</label>
+                  <input type="text" class="form-control" id="nome" placeholder="Digite seu Nome: *" required="required" data-validation-required-message="Por favor, digite seu nome completo.">
+                  <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                  <label for="E-mail">E-mail:</label>
+                  <input type="text" class="form-control" id="email" placeholder="Digite seu E-mail: *" required="required" data-validation-required-message="Por favor, digite seu E-mail completo.">
+                  <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                  <label for="telefone">Telefone:</label>
+                  <input type="tel" class="form-control" id="telefone" placeholder="Digite seu Número: *" required="required" data-validation-required-message="Por favor, digite seu Telefone.">
+                  <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                  <label for="assunto">Assunto:</label>
+                  <input type="text" class="form-control" id="assunto" placeholder="Assunto: *" required="required" data-validation-required-message="Por favor, escreva qual assunto quer tratar.">
+                  <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                  <label for="mensagem">Mensagem:</label>
+                  <textarea class="form-control" rows="5" id="mensagem" required="required" data-validation-required-message="Por favor, escreva sua mensagem."></textarea>
+                  <p class="help-block text-danger"></p>
+              </div>
+              
+              <div id="success"></div>
+              <button id="sendMessageButton" type="submit" class="btn btn-dark">Enviar</button>
+          </form>
+        </div>
+
+        <div class="col-md-6">
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.483528480631!2d-46.60805968501973!3d-23.69442098461692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce446398fa15a3%3A0x16c8815e4ed65372!2sGRID%20CALOTAS!5e0!3m2!1spt-BR!2sbr!4v1599057450088!5m2!1spt-BR!2sbr" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="container-fluid d-block ">
+      <div class="row">
+        <div class="col-md-12 mx-auto btn btn-orange button-representantes">
+          <a href="#produtos" class="nav-link" data-toggle="collapse" data-target="#demo">
+            Fale agora com um de nossos representantes
+          </a>
+        </div>
+
+        <div class="col-md-12 bg-orange">
+          <div id="demo" class="collapse">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>UF</th>
+                  <th>REGIÃO DE ATENDIMENTO / ATUAÇÃO</th>
+                  <th>REPRESENTANTE</th>
+                  <th>TELEFONE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>AC</td>
+                  <td>ACRE</td>
+                  <td>RICARDO</td>
+                  <td>(69)99960-5001</td>
+                </tr>
+                <tr>
+                  <td>AL</td>
+                  <td>ALAGOAS</td>
+                  <td>ANDRÉ</td>
+                  <td>(79)99979-3298</td>
+                </tr>
+                <tr>
+                  <td>AM</td>
+                  <td>AMAZONAS</td>
+                  <td>GLEISON</td>
+                  <td>(92)98111-4597</td>
+                </tr>
+                <tr>
+                  <td>AP</td>
+                  <td>AMAPÁ</td>
+                  <td>JORGE</td>
+                  <td>(91)98352-7577</td>
+                </tr>
+                <tr>
+                  <td>BA</td>
+                  <td>BAHIA</td>
+                  <td>CLAUDIO</td>
+                  <td>(75)99143-6892</td>
+                </tr>
+                <tr>
+                  <td>BA</td>
+                  <td>BAHIA</td>
+                  <td>DANIELLA</td>
+                  <td>(75)99127-3532</td>
+                </tr>
+                <tr>
+                  <td>BR</td>
+                  <td>BRASIL</td>
+                  <td>AILTON</td>
+                  <td>(11)4057-7500</td>
+                </tr>
+                <tr>
+                  <td>BR</td>
+                  <td>BRASIL</td>
+                  <td>ALBERTO</td>
+                  <td>(16)98137-9942</td>
+                </tr>
+                <tr>
+                  <td>BR</td>
+                  <td>BRASIL</td>
+                  <td>ANA PAULA</td>
+                  <td>(16)99722-6035</td>
+                </tr>
+                <tr>
+                  <td>BR</td>
+                  <td>BRASIL</td>
+                  <td>CRISTIANO</td>
+                  <td>(11)4057-7500</td>
+                </tr>
+                <tr>
+                  <td>BR</td>
+                  <td>HIPERMERCADOS</td>
+                  <td>MARCO AURÉLIO</td>
+                  <td>(11)97969-6780</td>
+                </tr>
+                <tr>
+                  <td>BR</td>
+                  <td>BRASIL</td>
+                  <td>VANESSA</td>
+                  <td>(11)4057-7500</td>
+                </tr>
+                <tr>
+                  <td>BR</td>
+                  <td>BRASIL</td>
+                  <td>WILMAR</td>
+                  <td>(11)4057-7500</td>
+                </tr>
+                <tr>
+                  <td>CE</td>
+                  <td>CEARÁ</td>
+                  <td>CLODOVALDO</td>
+                  <td>(85)99928-4208</td>
+                </tr>
+                <tr>
+                  <td>DF</td>
+                  <td>DISTRITO FEDERAL</td>
+                  <td>ROBSON</td>
+                  <td>(62)99616-6023</td>
+                </tr>
+                <tr>
+                  <td>ES</td>
+                  <td>ESPÍRITO SANTO</td>
+                  <td>ROGEN</td>
+                  <td>(27)98895-5526</td>
+                </tr>
+                <tr>
+                  <td>EX</td>
+                  <td>EXPORTAÇÃO</td>
+                  <td>HORUS</td>
+                  <td>(11)98966-9111</td>
+                </tr>
+                <tr>
+                  <td>GO</td>
+                  <td>GOIÁS</td>
+                  <td>JONAS</td>
+                  <td>(62)99972-9423</td>
+                </tr>
+                <tr>
+                  <td>MA</td>
+                  <td>MARANHÃO</td>
+                  <td>AREDIO</td>
+                  <td>(63)99987-2340</td>
+                </tr>
+                <tr>
+                  <td>MG</td>
+                  <td>JUIZ DE FORA / ZONA DA MATA</td>
+                  <td>MARCELO</td>
+                  <td>(32)99988-6239</td>
+                </tr>
+                <tr>
+                  <td>MG</td>
+                  <td>GRANDE BELO HORIZONTE</td>
+                  <td>ROBERTO</td>
+                  <td>(31)99982-0915</td>
+                </tr>
+                <tr>
+                  <td>MS</td>
+                  <td>MATO GROSSO DO SUL</td>
+                  <td>MAGNO</td>
+                  <td>(67)99982-1237</td>
+                </tr>
+                <tr>
+                  <td>MT</td>
+                  <td>MATO GROSSO</td>
+                  <td>MAGNO</td>
+                  <td>(67)99982-1237</td>
+                </tr>
+                <tr>
+                  <td>PARÁ</td>
+                  <td>PARÁ</td>
+                  <td>JORGE</td>
+                  <td>(91)98352-7577</td>
+                </tr>
+                <tr>
+                  <td>PB</td>
+                  <td>PARAÍBA</td>
+                  <td>GILVANDO</td>
+                  <td>(83)99816-9140</td>
+                </tr>
+                <tr>
+                  <td>PE</td>
+                  <td>PERNANBUCO</td>
+                  <td>ELYSIO</td>
+                  <td>(81)99972-2580</td>
+                </tr>
+                <tr>
+                  <td>PI</td>
+                  <td>PIAUÍ</td>
+                  <td>MARCOS</td>
+                  <td>(86)99972-7427</td>
+                </tr>
+                <tr>
+                  <td>PR</td>
+                  <td>CURITIBA</td>
+                  <td>ADILSON</td>
+                  <td>(41)99986-1090</td>
+                </tr>
+                <tr>
+                  <td>PR</td>
+                  <td>MARINGÁ E REGIÃO</td>
+                  <td>FAVARIN</td>
+                  <td>(45)99973-2515</td>
+                </tr>
+                <tr>
+                  <td>PR</td>
+                  <td>CASCAVEL E REGIÃO</td>
+                  <td>VANDERLEI</td>
+                  <td>(45)99133-3731</td>
+                </tr>
+                <tr>
+                  <td>RJ</td>
+                  <td>RIO DE JANEIRO</td>
+                  <td>GILSON</td>
+                  <td>(21)99858-4040</td>
+                </tr>
+                <tr>
+                  <td>RJ</td>
+                  <td>RIO DE JANEIRO</td>
+                  <td>LUIZ</td>
+                  <td>(21)99891-9898</td>
+                </tr>
+                <tr>
+                  <td>RN</td>
+                  <td>RIO GRANDE DO NORTE</td>
+                  <td>GILVANDO</td>
+                  <td>(83)99816-9140</td>
+                </tr>
+                <tr>
+                  <td>RO</td>
+                  <td>RONDÔNIA</td>
+                  <td>RICARDO</td>
+                  <td>(69)99960-5001</td>
+                </tr>
+                <tr>
+                  <td>RR</td>
+                  <td>RORAIMA</td>
+                  <td>GLEISON</td>
+                  <td>(93)98111-4597</td>
+                </tr>
+                <tr>
+                  <td>RS</td>
+                  <td>RIO GRANDE DO SUL</td>
+                  <td>FERNANDO / GABRIEL / RONALDO</td>
+                  <td>(51)3341-8579</td>
+                </tr>
+                <tr>
+                  <td>SC</td>
+                  <td>OESTE CATARINENSE (REGIÃO DE CHAPECÓ)</td>
+                  <td>ALCIDES</td>
+                  <td>(47)99644-0000</td>
+                </tr>
+                <tr>
+                  <td>SC</td>
+                  <td>GRANDE FLORIANÓPOLIS</td>
+                  <td>ANTÔNIO CARLOS</td>
+                  <td>(48)99993-4493</td>
+                </tr>
+                <tr>
+                  <td>SC</td>
+                  <td>JOINVILLE E REGIÃO</td>
+                  <td>MAURI</td>
+                  <td>(47)99984-7862</td>
+                </tr>
+                <tr>
+                  <td>SE</td>
+                  <td>SERGIPE</td>
+                  <td>JOSÉ ANTÔNIO</td>
+                  <td>(79)99820-6638</td>
+                </tr>
+                <tr>
+                  <td>SP</td>
+                  <td>GRANDE SÃO PAULO</td>
+                  <td>DANIEL</td>
+                  <td>(11)99980-5256</td>
+                </tr>
+                <tr>
+                  <td>SP</td>
+                  <td>INTERIOR DE SÃO PAULO (REGIÃO DE RIBEIRÃO PRETO)</td>
+                  <td>EDSON</td>
+                  <td>(17)99702-2434</td>
+                </tr>
+                <tr>
+                  <td>SP</td>
+                  <td>BAIXADA SANTISTA</td>
+                  <td>	HENRIQUE</td>
+                  <td>(13)98856-3490</td>
+                </tr>
+                <tr>
+                  <td>SP</td>
+                  <td>	ESTADO DE SÃO PAULO</td>
+                  <td>MARIO</td>
+                  <td>(11)99881-4788</td>
+                </tr>
+                <tr>
+                  <td>SP</td>
+                  <td>GRANDE SÃO PAULO E ABC</td>
+                  <td>WILSON</td>
+                  <td>(11)98444-9466</td>
+                </tr>
+                <tr>
+                  <td>TO	</td>
+                  <td>TOCANTINS</td>
+                  <td>AREDIO</td>
+                  <td>(63)99987-2340</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
 
     <script src="https://kit.fontawesome.com/4783fe1c33.js" crossorigin="anonymous"></script>
 
