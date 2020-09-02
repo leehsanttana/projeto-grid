@@ -122,9 +122,28 @@ main{
     color: var(--white-hover);
 }
 
+.table th,
+    .table td {
+      padding: 0.25rem !important;
+      font-size: .9rem !important;
+      vertical-align: top;
+      border-top: 1px solid #dee2e6;
+    }
+
 .table-bordered td,
 .table-bordered th{
     border-color: var(--orange2) !important;
     font-family: 'PT Sans', sans-serif;
     background: var(--white);
 }
+
+@media only screen and (min-width: 768px) {
+    .table th,
+    .table td {
+      padding: 0.75rem !important;
+      vertical-align: top;
+      border-top: 1px solid #dee2e6;
+    }
+}
+
+
