@@ -122,6 +122,10 @@ main{
     color: var(--white-hover);
 }
 
+.table{
+    width: 90% !important;
+}
+
 .table th,
 .table td {
       padding: 0.25rem !important;
