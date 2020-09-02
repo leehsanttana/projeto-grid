@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 
 :root{
     --orange: #fb5607;
@@ -11,13 +12,23 @@
 }
 
 .bg-black{
-    background-color: var(--black) !important;
+    background-color: var(--black);
 }
 
-h1{
+.bg-orange{
+    background: linear-gradient(45deg, #fb5607, #dc2f02);
+}
+
+h1, h2, h4{
     font-family: 'Chivo', sans-serif;
     color: var(--white);
     font-style: italic;
+}
+
+p{
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.2rem;
+    color: var(--white);
 }
 
 main{
@@ -29,8 +40,8 @@ main{
 }
 
 .btn-orange{
-    background: var(--orange) !important;
-    border-color: var(--orange) !important;
+    background: var(--dark-orange) !important;
+    border-color: var(--dark-orange) !important;
 }
 
 .btn-orange:hover{
@@ -40,13 +51,14 @@ main{
 
 .button{
     border-radius: 2rem !important;
-    transition: .5s ease-in-out !important;
+    transition: .3s ease-in-out !important;
 }
 
 .button a{
     font-size: 1.3rem;
     color: var(--white);
     font-weight: 600;
+    transition: .3s ease-in-out !important;
 }
 
 .button:hover{
@@ -56,4 +68,15 @@ main{
 .button a:hover{
     font-size: 1.3rem;
     color: var(--white-hover);
+}
+
+.img-banner{
+    background: var(--white);
+    padding: 1rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    color: var(--dark-orange) !important;
+    font-size: 1.5rem;
 }
