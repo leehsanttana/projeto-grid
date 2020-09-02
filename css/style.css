@@ -10,6 +10,10 @@
     --white-hover: #dddddd;
 }
 
+.bg-black{
+    background-color: var(--black) !important;
+}
+
 h1{
     font-family: 'Chivo', sans-serif;
     color: var(--white);
