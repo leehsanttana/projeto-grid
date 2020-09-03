@@ -23,7 +23,11 @@ html{
     background: linear-gradient(45deg, #fb5607, #dc2f02);
 }
 
-h1, h2, h4{
+.text-orange{
+    color: #fb5607 !important;
+}
+
+h1, h2, h4, h6{
     font-family: 'Chivo', sans-serif;
     color: var(--white);
     font-style: italic;
@@ -50,11 +54,13 @@ main{
 .btn-orange{
     background: var(--dark-orange) !important;
     border-color: var(--dark-orange) !important;
+    color: var(--white) !important;
 }
 
 .btn-orange:hover{
     background: var(--orange2) !important;
     border-color: var(--orange2) !important;
+    color: var(--white-hover) !important;
 }
 
 .button{
