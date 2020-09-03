@@ -39,12 +39,32 @@ p, label{
     color: var(--white);
 }
 
+i{
+    font-size: 1.5rem;
+}
+
 body{
     background: linear-gradient(to top, rgba(94, 28, 12, 0.3), rgba(46, 46, 46, 0.3)), url(../image/background-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+
+.change .bar{
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    transition: .5s !important;
+  }
+
+nav .nav-link{
+    color: var(--white) !important;
+}
+
+nav .nav-link:hover{
+    color: var(--white-hover) !important;
+}
+
 
 main{
     height: 100vh;
@@ -153,4 +173,6 @@ main{
     }
 }
 
-
+footer i{
+    font-size: 3rem;
+}
